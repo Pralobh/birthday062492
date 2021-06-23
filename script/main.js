@@ -260,13 +260,23 @@ const animationTimeline = () => {
 	.staggerFrom(".eightandhalf p", 1, ideaTextTrans, 1.2)
 	.to(
       ".eightandhalf",
-      0.7,
+      1.2,
       {
         opacity: 0,
         y: 10
       },
       "+=2"
 	)
+	
+	.to(
+      ".tongue",
+      0.7,
+      {
+        rotation: 90,
+        x: 8
+      },
+      "+=0.4"
+    )
 	
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
